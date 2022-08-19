@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/backgroundLp.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+body .container {
+  background-color: rgba(19, 18, 18, 0.9450980392);
+  width: 450px;
+}
+
+img {
+  width: 185px;
+}
+
+p {
+  margin: 8px 0;
+}
+
+.btnSend {
+  color: #FF0043;
+  border: 1px solid #FF0043;
+  transition: 0.5s;
+}
+.btnSend:hover {
+  background-color: #FF0043;
+  border: 1px solid #FF0043;
+  color: #FFFFFF;
+}
+
+footer {
+  margin-bottom: -30px;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.5s;
+  position: relative;
+}
+footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: 1px solid #FF0043;
+  transition: opacity 1s, width 0.5s;
+}
+footer a:hover {
+  color: #FF0043;
+}
+footer a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
