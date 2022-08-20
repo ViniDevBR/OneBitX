@@ -12,21 +12,23 @@ body {
 }
 body .container {
   background-color: rgba(19, 18, 18, 0.9450980392);
-  width: 450px;
+  width: 100%;
+  max-width: 500px;
 }
 
 img {
-  width: 185px;
+  width: 18.5rem;
 }
 
 p {
-  margin: 8px 0;
+  margin: 0.8rem 0;
 }
 
 .btnSend {
   color: #FF0043;
   border: 1px solid #FF0043;
   transition: 0.5s;
+  margin-block: 1rem;
 }
 .btnSend:hover {
   background-color: #FF0043;
@@ -35,7 +37,7 @@ p {
 }
 
 footer {
-  margin-bottom: -30px;
+  margin-bottom: -2.5rem;
 }
 footer a {
   color: #FFFFFF;
@@ -60,6 +62,49 @@ footer a:hover {
 footer a:hover::after {
   width: 100%;
   opacity: 1;
+}
+
+@media (min-width: 2500px) {
+  body .container {
+    max-width: 1000px;
+  }
+  img {
+    width: 40rem;
+  }
+  p {
+    margin: 0.8rem 0;
+    font-size: 2.5rem;
+  }
+  .form2, .form3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .form2 .form-check-input, .form3 .form-check-input {
+    width: 2rem;
+    height: 2rem;
+  }
+  .form3 .form-check-input {
+    width: 4rem;
+    height: 2rem;
+  }
+  .form4 .form-check-input {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
+  .titleName,
+.options,
+.input {
+    font-size: 2rem;
+  }
+  .btnSend {
+    font-size: 2.5rem;
+    margin-block: 2rem;
+  }
+  footer {
+    margin-bottom: -2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
