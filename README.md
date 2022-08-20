@@ -20,6 +20,3 @@ Additionally: It was implemented hover on my name.
 
 - [x] Semantic use of HTML
 - [x] Global variables inserted in Sass
-
-
-There's missing responsive.
